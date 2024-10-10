@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+    grid-gap: 5px;
+    grid-template-columns: 20vw auto auto;
+    grid-template-rows: 50px calc(100vh - 100px -10px) 50px;
+}
+
+.header {
+    background-color: blanchedalmond;
+    padding: 10px;
+    height: 100px;
+    grid-area: header;
+    color: black;
+}
+
+.aside {
+    background-color: rgb(214, 90, 45);
+    padding: 10px;
+    height: 600px;
+    grid-area: aside;
+}
+
+.main {
+    background-color: rgb(148, 30, 134);
+    padding: 10px;
+    grid-area: main;
+}
+
+.footer {
+    background-color: rgb(205, 255, 244);
+    padding: 10px;
+    height: 150px;
+    grid-area: footer;
+    color: black;
+}
